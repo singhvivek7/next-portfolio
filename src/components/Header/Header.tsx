@@ -12,10 +12,9 @@ export const Header = () => {
   return (
     <header className="w-full bg-background h-20 text-foreground fixed top-0 left-0 z-header border-b shadow-md">
       <div className="h-full w-11/12 lg:w-3/4 mx-auto flex justify-between items-center relative">
-        <Link
-          href="/#home"
-          className="text-3xl font-bold text-center uppercase">
-          Vivek Kumar
+        <Link href="/#home" className="logo">
+          <span>Vivekkk</span>
+          <div className="beta">beta</div>
         </Link>
 
         <nav className="hidden lg:flex gap-5 xl:gap-10 font-semibold text-lg uppercase">

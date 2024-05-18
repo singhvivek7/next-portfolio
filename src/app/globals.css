@@ -72,3 +72,11 @@ html {
     stroke-dashoffset: 0;
   }
 }
+
+.logo {
+  @apply text-4xl font-black text-center uppercase relative;
+
+  .beta {
+    @apply absolute text-[8px] leading-3 bg-[#ef233c] text-background rounded px-1 -right-7 bottom-1.5;
+  }
+}
