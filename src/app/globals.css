@@ -3,31 +3,72 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* --background: hsl(0 0% 96%);
+  --foreground: hsl(221 24% 13%);
+  --primary: hsl(208.22 100% 36.27%);
+  --secondary: hsl(163 99% 38%);
+  --tertiary: hsl(221 7% 44%);
+  */
+
+  --background: 0 0% 96%;
+  --foreground: 221 24% 13%;
+  --primary: 208.22 100% 36.27%;
+  --secondary: 163 99% 38%;
+  --tertiary: 221 7% 44%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html {
+  @apply scroll-smooth text-tertiary;
+
+  ::-webkit-scrollbar {
+    @apply w-[10px] h-[10px];
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-tertiary/30;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-lg;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+
+  ::selection {
+    @apply bg-[#ef233c] text-white;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cursor {
+  @apply border border-primary left-0 right-0 h-8 w-8 rounded-full fixed z-[999] pointer-events-none;
+  transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.animated__logo {
+  @apply select-none;
+  circle {
+    @apply fill-tertiary/5;
+  }
+  path {
+    @apply stroke-primary;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    stroke-width: 1px;
+    animation: dash 3s linear forwards infinite alternate;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  40% {
+    fill: #00000000;
+  }
+  100% {
+    @apply fill-primary;
+    stroke-dashoffset: 0;
   }
 }
