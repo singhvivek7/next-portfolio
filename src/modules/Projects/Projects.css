@@ -1,0 +1,7 @@
+.skill-tag {
+  @apply bg-[#eeeeee] py-3 px-8 rounded font-medium text-base capitalize select-none flex justify-center items-center w-fit relative;
+
+  .tag {
+    @apply absolute block inset-[-1px] rounded z-[-1];
+  }
+}
