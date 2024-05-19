@@ -9,9 +9,7 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.response.use(
   response => response,
-  error => {
-    return Promise.reject(error.response.data);
-  }
+  error => Promise.reject(error.response.data)
 );
 
 export const postReq = async (url: string, reqBody: AnyType) => {
