@@ -5,5 +5,5 @@ export const appConfig = {
   emailPass: process.env.EMAIL_PASS ?? '',
   baseUrl: process.env.NEXT_PUBLIC_BASE_URL ?? '',
   recaptchaSiteKey: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? '',
-  recaptchaSecret: process.env.NEXT_PUBLIC_RECAPTCHA_SECRET ?? '',
+  recaptchaSecret: process.env.NEXT_PUBLIC_RECAPTCHA_SECRET ?? ''
 };

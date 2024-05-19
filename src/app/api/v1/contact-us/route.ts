@@ -14,18 +14,18 @@ export const POST = async (req: NextRequest) => {
     headers: { 'Content-type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({
       secret: appConfig.recaptchaSecret,
-      response: captcha,
-    }),
-  }).then(res => res.json());
+      response: captcha
+    })
+  }).then((res) => res.json());
 
   if (!captchaResponse.success) {
     return NextResponse.json(
       {
         success: false,
-        message: captchaResponse['error-codes'][0],
+        message: captchaResponse['error-codes'][0]
       },
       {
-        status: 500,
+        status: 500
       }
     );
   }
@@ -34,10 +34,10 @@ export const POST = async (req: NextRequest) => {
     return NextResponse.json(
       {
         success: false,
-        message: 'Please complete the captcha',
+        message: 'Please complete the captcha'
       },
       {
-        status: 400,
+        status: 400
       }
     );
   }
@@ -46,10 +46,10 @@ export const POST = async (req: NextRequest) => {
     return NextResponse.json(
       {
         success: false,
-        message: 'Please fill all the fields',
+        message: 'Please fill all the fields'
       },
       {
-        status: 400,
+        status: 400
       }
     );
   }
@@ -58,27 +58,27 @@ export const POST = async (req: NextRequest) => {
       from: 'Portfolio Message <' + appConfig.emailFrom + '>',
       to: appConfig.emailTo,
       subject: `[Portfolio] Contact Us - ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     });
 
     return NextResponse.json(
       {
         success: true,
         message:
-          'Your message has been sent securely, we will get back to you shortly.',
+          'Your message has been sent securely, we will get back to you shortly.'
       },
       {
-        status: 200,
+        status: 200
       }
     );
   } catch (err) {
     return NextResponse.json(
       {
         success: false,
-        message: 'Something went wrong, please try again later.',
+        message: 'Something went wrong, please try again later.'
       },
       {
-        status: 500,
+        status: 500
       }
     );
   }

@@ -1,16 +1,16 @@
 .hero-wrapper {
-  @apply h-dvh w-full relative bg-primary/80 text-background pt-20;
+  @apply relative h-dvh w-full bg-primary/80 pt-20 text-background;
 
   &::before {
-    @apply content-[""] absolute inset-0 opacity-100 z-[-1];
+    @apply absolute inset-0 z-[-1] opacity-100 content-[""];
     background: url('./../../../public/imgs/bg.svg');
   }
 
   .mouse {
-    @apply absolute bottom-5 left-1/2 -translate-x-1/2 h-11 w-7 border-2 rounded-full;
+    @apply absolute bottom-5 left-1/2 h-11 w-7 -translate-x-1/2 rounded-full border-2;
 
     &::after {
-      @apply content-[""] absolute top-0 left-1/2 h-1.5 w-1.5 bg-background rounded-full my-2;
+      @apply absolute left-1/2 top-0 my-2 h-1.5 w-1.5 rounded-full bg-background content-[""];
       animation: upToDown 1.2s infinite ease-out forwards;
     }
   }

@@ -8,6 +8,11 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Vivek Kumar - Portfolio',
   description: 'Full Stack Developer - Vivek Kumar',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/favicon.ico',
+    shortcut: '/favicon.ico'
+  }
 };
 
 interface RootLayoutProps {
@@ -17,7 +22,7 @@ interface RootLayoutProps {
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
-      <body className={`${fontPrimary.className} antialiased relative`}>
+      <body className={`${fontPrimary.className} relative antialiased`}>
         <Layout>
           <Header />
           {children}

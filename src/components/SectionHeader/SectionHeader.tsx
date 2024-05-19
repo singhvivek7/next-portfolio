@@ -9,16 +9,17 @@ export const SectionHeader = ({
   title,
   description,
   hrClassName = 'bg-primary',
-  headingClassName = '',
+  headingClassName = ''
 }: Props) => {
   return (
     <div className="flex flex-col items-center justify-start gap-5 text-center">
       <h2
-        className={`text-5xl font-bold uppercase text-balance text-foreground ${headingClassName}`}>
+        className={`text-balance text-5xl font-bold uppercase text-foreground ${headingClassName}`}
+      >
         {title}
       </h2>
-      <hr className={`w-12 h-1.5 rounded-lg ${hrClassName}`} />
-      <p className="text-lg md:text-xl text-balance">{description}</p>
+      <hr className={`h-1.5 w-12 rounded-lg ${hrClassName}`} />
+      <p className="text-balance text-lg md:text-xl">{description}</p>
     </div>
   );
 };

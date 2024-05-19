@@ -21,7 +21,7 @@ html {
   @apply scroll-smooth text-tertiary;
 
   ::-webkit-scrollbar {
-    @apply w-[10px] h-[10px];
+    @apply h-[10px] w-[10px];
   }
 
   ::-webkit-scrollbar-track {
@@ -29,7 +29,7 @@ html {
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-primary rounded-lg;
+    @apply rounded-lg bg-primary;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -42,7 +42,7 @@ html {
 }
 
 .cursor {
-  @apply border border-primary left-0 right-0 h-8 w-8 rounded-full fixed z-[999] pointer-events-none;
+  @apply pointer-events-none fixed left-0 right-0 z-[999] h-8 w-8 rounded-full border border-primary;
   transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -74,9 +74,9 @@ html {
 }
 
 .logo {
-  @apply text-4xl font-black text-center uppercase relative;
+  @apply relative text-center text-4xl font-black uppercase;
 
   .beta {
-    @apply absolute text-[8px] leading-3 bg-[#ef233c] text-background rounded px-1 -right-7 bottom-1.5;
+    @apply absolute -right-7 bottom-1.5 rounded bg-[#ef233c] px-1 text-[8px] leading-3 text-background;
   }
 }

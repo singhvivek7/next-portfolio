@@ -4,12 +4,12 @@ import { appConfig } from '@/config//app.config';
 
 const axiosInstance = axios.create({
   baseURL: appConfig.baseUrl,
-  withCredentials: true,
+  withCredentials: true
 });
 
 axiosInstance.interceptors.response.use(
-  response => response,
-  error => Promise.reject(error.response.data)
+  (response) => response,
+  (error) => Promise.reject(error.response.data)
 );
 
 export const postReq = async (url: string, reqBody: AnyType) => {
