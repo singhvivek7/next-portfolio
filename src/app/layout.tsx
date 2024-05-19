@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+
 import { fontPrimary } from '@/utils/fonts';
-import { Footer, Header, Layout } from '@/components';
-import { Toaster } from '@/components';
+import { Footer, Header, Layout, Toaster } from '@/components';
 
 import './globals.css';
+import './react-tooltip.css';
 
 export const metadata: Metadata = {
   title: 'Vivek Kumar - Portfolio',

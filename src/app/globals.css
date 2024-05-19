@@ -42,7 +42,7 @@ html {
 }
 
 .cursor {
-  @apply pointer-events-none fixed left-0 right-0 z-[999] h-8 w-8 rounded-full border border-primary;
+  @apply pointer-events-none fixed left-0 right-0 z-cursor h-8 w-8 rounded-full border border-primary;
   transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
