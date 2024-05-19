@@ -1,0 +1,10 @@
+
+.next
+.cache
+package-lock.json
+pnpm-lock.json
+yarn.lock
+public
+node_modules
+next.config.ts
+next-env.d.ts

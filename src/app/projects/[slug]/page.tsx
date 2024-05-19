@@ -10,7 +10,7 @@ interface Props {
 const Project = ({ params: { slug } }: Props) => {
   const projectId = slug.split('_').at(1);
 
-  const projectDetails = MY_PROJECTS.find(item => item.id === projectId);
+  const projectDetails = MY_PROJECTS.find((item) => item.id === projectId);
 
   if (!projectDetails) {
     notFound();

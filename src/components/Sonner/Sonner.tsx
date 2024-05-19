@@ -19,8 +19,8 @@ const Toaster = ({ ...props }: ToasterProps) => {
           description: 'group-[.toast]:text-[#f5f5f5e0]',
           actionButton: 'group-[.toast]:bg-primary group-[.toast]:text-white',
           cancelButton:
-            'group-[.toast]:bg-muted group-[.toast]:text-[#f5f5f5e0]',
-        },
+            'group-[.toast]:bg-muted group-[.toast]:text-[#f5f5f5e0]'
+        }
       }}
       {...props}
     />
@@ -30,7 +30,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
 const toast = ({
   message,
   type,
-  description,
+  description
 }: {
   message: string;
   description?: string;
@@ -42,10 +42,10 @@ const toast = ({
         'bg-green-500 text-white': type === 'success',
         'bg-yellow-500 text-white': type === 'warning',
         'bg-red-500 text-white': type === 'error',
-        'bg-primary text-white': type === 'info',
-      }),
+        'bg-primary text-white': type === 'info'
+      })
     },
-    description,
+    description
   });
 };
 

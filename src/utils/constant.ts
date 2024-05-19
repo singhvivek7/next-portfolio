@@ -27,7 +27,7 @@ export const MY_SKILLS = {
     { name: 'Java', id: randomUUID(), color: '#f89820' },
     { name: 'JavaScript', id: randomUUID(), color: '#f0db4f' },
     { name: 'TypeScript', id: randomUUID(), color: '#007acc' },
-    { name: 'Python', id: randomUUID(), color: '#306998' },
+    { name: 'Python', id: randomUUID(), color: '#306998' }
   ],
   frameworks: [
     { name: 'Next.js', id: randomUUID(), color: '#000000' },
@@ -48,14 +48,14 @@ export const MY_SKILLS = {
     { name: 'MySQL', id: randomUUID(), color: '#4479a1' },
     { name: 'PostgreSQL', id: randomUUID(), color: '#336791' },
     { name: 'FastAPI', id: randomUUID(), color: '#009688' },
-    { name: 'DSA', id: randomUUID(), color: '#4CAF50' },
+    { name: 'DSA', id: randomUUID(), color: '#4CAF50' }
   ],
   devops: [
     { name: 'Docker', id: randomUUID(), color: '#2496ed' },
     { name: 'Git', id: randomUUID(), color: '#f34f29' },
     { name: 'GitHub', id: randomUUID(), color: '#181717' },
     { name: 'Gitlab', id: randomUUID(), color: '#fc6d26' },
-    { name: 'Bitbucket', id: randomUUID(), color: '#0052cc' },
+    { name: 'Bitbucket', id: randomUUID(), color: '#0052cc' }
   ],
 
   softSkills: [
@@ -64,8 +64,8 @@ export const MY_SKILLS = {
     { name: 'Quick Learner', id: randomUUID(), color: '#FF4500' },
     { name: 'Adaptability', id: randomUUID(), color: '#FFA500' },
     { name: 'Time management', id: randomUUID(), color: '#2E8B57' },
-    { name: 'Leadership', id: randomUUID(), color: '#FFD700' },
-  ],
+    { name: 'Leadership', id: randomUUID(), color: '#FFD700' }
+  ]
 };
 
 export const MY_PROJECTS: MyProjects[] = [
@@ -79,7 +79,7 @@ export const MY_PROJECTS: MyProjects[] = [
     description: {
       para1:
         'My personal portfolio website is a showcase of my skills, projects, and professional journey. Built with React and Next.js, it features a clean and modern design, highlighting my expertise in Java, JavaScript, TypeScript, Python, and various web development frameworks and libraries. The website includes detailed sections about me, my skills, and my past projects, providing visitors with a comprehensive view of my work and capabilities. It also offers easy navigation and a responsive layout, ensuring a seamless user experience across all devices.',
-      para2: 'Deployed using Vercel.',
+      para2: 'Deployed using Vercel.'
     },
     url: 'https://vivekkk.vercel.app/',
     github: 'https://github.com/singhvivek7/next-portfolio',
@@ -92,9 +92,9 @@ export const MY_PROJECTS: MyProjects[] = [
       { name: 'Framer Motion', id: randomUUID(), color: '#0055FF' },
       { name: 'Google reCAPTCHA', id: randomUUID(), color: '#4285F4' },
       { name: 'Vercel', id: randomUUID(), color: '#000000' },
-      { name: 'GitHub', id: randomUUID(), color: '#181717' },
-    ],
-  },
+      { name: 'GitHub', id: randomUUID(), color: '#181717' }
+    ]
+  }
   // {
   //   id: randomUUID(),
   //   name: 'Swiggy Clone',

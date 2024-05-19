@@ -10,16 +10,16 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: 'bg-white text-primary hover:bg-white/95',
-        secondary: 'bg-primary text-white hover:bg-primary/90',
+        secondary: 'bg-primary text-white hover:bg-primary/90'
       },
       size: {
-        default: 'py-3 px-10',
-      },
+        default: 'py-3 px-10'
+      }
     },
     defaultVariants: {
       variant: 'primary',
-      size: 'default',
-    },
+      size: 'default'
+    }
   }
 );
 

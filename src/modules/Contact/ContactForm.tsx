@@ -20,7 +20,7 @@ interface IFormData {
 const initialFormData = {
   name: '',
   email: '',
-  message: '',
+  message: ''
 };
 
 export const ContactForm = () => {
@@ -28,9 +28,9 @@ export const ContactForm = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors }
   } = useForm<IFormData>({
-    defaultValues: initialFormData,
+    defaultValues: initialFormData
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -40,7 +40,7 @@ export const ContactForm = () => {
     toast({
       message: 'Sending message...',
       type: 'info',
-      description: 'Please wait...',
+      description: 'Please wait...'
     });
     setIsLoading(true);
     const captcha = await captchaRef.current?.executeAsync();
@@ -49,14 +49,14 @@ export const ContactForm = () => {
       toast({
         message: 'Message sent.',
         type: 'success',
-        description: response.message,
+        description: response.message
       });
       reset();
     } catch (err: AnyType) {
       toast({
         message: 'Something went wrong.',
         type: 'error',
-        description: err.message,
+        description: err.message
       });
     } finally {
       setIsLoading(false);
@@ -67,16 +67,17 @@ export const ContactForm = () => {
     <form
       noValidate
       onSubmit={handleSubmit(onSubmit)}
-      className="w-11/12 lg:w-3/4 flex flex-col gap-5 px-8 sm:px-12 py-10 bg-white max-w-[700px] mx-auto mt-16 rounded-lg shadow-lg">
+      className="mx-auto mt-16 flex w-11/12 max-w-[700px] flex-col gap-5 rounded-lg bg-white px-8 py-10 shadow-lg sm:px-12 lg:w-3/4"
+    >
       <div className="flex flex-col justify-center gap-2">
-        <label className="text-tertiary w-fit text-lg" htmlFor="name">
+        <label className="w-fit text-lg text-tertiary" htmlFor="name">
           Name:
         </label>
         <input
           className={cn(
-            'px-5 py-3 focus-visible:outline-primary rounded-md border text-lg border-tertiary/20 bg-tertiary/5 text-tertiary placeholder:text-tertiary/50',
+            'rounded-md border border-tertiary/20 bg-tertiary/5 px-5 py-3 text-lg text-tertiary placeholder:text-tertiary/50 focus-visible:outline-primary',
             {
-              'border-red-500': errors.name?.message,
+              'border-red-500': errors.name?.message
             }
           )}
           type="text"
@@ -87,22 +88,22 @@ export const ContactForm = () => {
             required: 'Name is required',
             minLength: {
               value: 4,
-              message: 'Name must be at least 4 characters long',
-            },
+              message: 'Name must be at least 4 characters long'
+            }
           })}
         />
-        <p className="text-red-500 h-5">{errors.name?.message}</p>
+        <p className="h-5 text-red-500">{errors.name?.message}</p>
       </div>
 
       <div className="flex flex-col justify-center gap-2">
-        <label className="text-tertiary w-fit text-lg" htmlFor="email">
+        <label className="w-fit text-lg text-tertiary" htmlFor="email">
           Email:
         </label>
         <input
           className={cn(
-            'px-5 py-3 focus-visible:outline-primary rounded-md border text-lg border-tertiary/20 bg-tertiary/5 text-tertiary placeholder:text-tertiary/50',
+            'rounded-md border border-tertiary/20 bg-tertiary/5 px-5 py-3 text-lg text-tertiary placeholder:text-tertiary/50 focus-visible:outline-primary',
             {
-              'border-red-500': errors.email?.message,
+              'border-red-500': errors.email?.message
             }
           )}
           type="email"
@@ -113,23 +114,23 @@ export const ContactForm = () => {
             required: 'Email is required',
             pattern: {
               value: emailRegex,
-              message: 'Please enter a valid email',
-            },
+              message: 'Please enter a valid email'
+            }
           })}
         />
 
-        <p className="text-red-500 h-5">{errors.email?.message}</p>
+        <p className="h-5 text-red-500">{errors.email?.message}</p>
       </div>
 
       <div className="flex flex-col justify-center gap-2">
-        <label className="text-tertiary w-fit text-lg" htmlFor="message">
+        <label className="w-fit text-lg text-tertiary" htmlFor="message">
           Message:
         </label>
         <textarea
           className={cn(
-            'px-5 py-3 focus-visible:outline-primary rounded-md border text-lg border-tertiary/20 bg-tertiary/5 text-tertiary placeholder:text-tertiary/50 resize-none',
+            'resize-none rounded-md border border-tertiary/20 bg-tertiary/5 px-5 py-3 text-lg text-tertiary placeholder:text-tertiary/50 focus-visible:outline-primary',
             {
-              'border-red-500': errors.message?.message,
+              'border-red-500': errors.message?.message
             }
           )}
           id="message"
@@ -140,12 +141,12 @@ export const ContactForm = () => {
             required: 'Message is required',
             minLength: {
               value: 5,
-              message: 'Message must be at least 5 characters long',
-            },
+              message: 'Message must be at least 5 characters long'
+            }
           })}
         />
 
-        <p className="text-red-500 h-10 sm:h-5">{errors.message?.message}</p>
+        <p className="h-10 text-red-500 sm:h-5">{errors.message?.message}</p>
       </div>
 
       <ReCAPTCHA
@@ -157,8 +158,9 @@ export const ContactForm = () => {
       <Button
         variant="secondary"
         type="submit"
-        className="capitalize self-end"
-        disabled={isLoading}>
+        className="self-end capitalize"
+        disabled={isLoading}
+      >
         {isLoading ? 'Submitting...' : 'Submit'}
       </Button>
     </form>

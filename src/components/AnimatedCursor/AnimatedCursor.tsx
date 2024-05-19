@@ -25,7 +25,7 @@ export const AnimatedCursor = () => {
       className="cursor"
       style={{
         translateX: cursorX,
-        translateY: cursorY,
+        translateY: cursorY
       }}
     />
   );

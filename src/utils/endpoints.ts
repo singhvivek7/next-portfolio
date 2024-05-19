@@ -1,3 +1,3 @@
 export const endpoints = {
-  contactUs: 'api/v1/contact-us',
+  contactUs: 'api/v1/contact-us'
 };

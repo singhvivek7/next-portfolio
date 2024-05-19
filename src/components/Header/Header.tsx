@@ -10,23 +10,24 @@ export const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <header className="w-full bg-background h-20 text-foreground fixed top-0 left-0 z-header border-b shadow-md">
-      <div className="h-full w-11/12 lg:w-3/4 mx-auto flex justify-between items-center relative">
+    <header className="fixed left-0 top-0 z-header h-20 w-full border-b bg-background text-foreground shadow-md">
+      <div className="relative mx-auto flex h-full w-11/12 items-center justify-between lg:w-3/4">
         <Link href="/#home" className="logo">
           <span>Vivekkk</span>
           <div className="beta">beta</div>
         </Link>
 
-        <nav className="hidden lg:flex gap-5 xl:gap-10 font-semibold text-lg uppercase">
-          <Link href="/#home" className="hover:text-primary transition-colors">
+        <nav className="hidden gap-5 text-lg font-semibold uppercase lg:flex xl:gap-10">
+          <Link href="/#home" className="transition-colors hover:text-primary">
             Home
           </Link>
-          <Link href="/#about" className="hover:text-primary transition-colors">
+          <Link href="/#about" className="transition-colors hover:text-primary">
             About
           </Link>
           <Link
             href="/#projects"
-            className="hover:text-primary transition-colors">
+            className="transition-colors hover:text-primary"
+          >
             Projects
           </Link>
           {/* <Link
@@ -36,41 +37,45 @@ export const Header = () => {
           </Link> */}
           <Link
             href="/#contact"
-            className="hover:text-primary transition-colors">
+            className="transition-colors hover:text-primary"
+          >
             Contact
           </Link>
         </nav>
         {isNavOpen ? (
           <FaTimes
-            className="lg:hidden text-3xl"
+            className="text-3xl lg:hidden"
             onClick={() => setIsNavOpen(false)}
           />
         ) : (
           <FaBars
-            className="lg:hidden text-3xl"
+            className="text-3xl lg:hidden"
             onClick={() => setIsNavOpen(true)}
           />
         )}
       </div>
 
       {isNavOpen && (
-        <nav className="flex flex-col items-start font-semibold text-lg uppercase absolute h-fit w-full top-20 left-0 bg-background">
+        <nav className="absolute left-0 top-20 flex h-fit w-full flex-col items-start bg-background text-lg font-semibold uppercase">
           <Link
             href="/#home"
             onClick={() => setIsNavOpen(false)}
-            className="text-foreground w-full py-3 border-b px-[4.15%] hover:bg-primary/10 active:text-primary hover:text-primary transition-all">
+            className="w-full border-b px-[4.15%] py-3 text-foreground transition-all hover:bg-primary/10 hover:text-primary active:text-primary"
+          >
             Home
           </Link>
           <Link
             href="/#about"
             onClick={() => setIsNavOpen(false)}
-            className="text-foreground w-full py-3 border-b px-[4.15%] hover:bg-primary/10 active:text-primary hover:text-primary transition-all">
+            className="w-full border-b px-[4.15%] py-3 text-foreground transition-all hover:bg-primary/10 hover:text-primary active:text-primary"
+          >
             About
           </Link>
           <Link
             href="/#projects"
             onClick={() => setIsNavOpen(false)}
-            className="text-foreground w-full py-3 border-b px-[4.15%] hover:bg-primary/10 active:text-primary hover:text-primary transition-all">
+            className="w-full border-b px-[4.15%] py-3 text-foreground transition-all hover:bg-primary/10 hover:text-primary active:text-primary"
+          >
             Projects
           </Link>
           {/* <Link
@@ -82,7 +87,8 @@ export const Header = () => {
           <Link
             href="/#contact"
             onClick={() => setIsNavOpen(false)}
-            className="text-foreground w-full py-3 border-b px-[4.15%] hover:bg-primary/10 active:text-primary hover:text-primary transition-all">
+            className="w-full border-b px-[4.15%] py-3 text-foreground transition-all hover:bg-primary/10 hover:text-primary active:text-primary"
+          >
             Contact
           </Link>
         </nav>
