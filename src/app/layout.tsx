@@ -22,7 +22,9 @@ interface RootLayoutProps {
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
-      <body className={`${fontPrimary.className} relative antialiased`}>
+      <body
+        className={`${fontPrimary.className} ${fontPrimary.variable} relative antialiased`}
+      >
         <Layout>
           <Header />
           {children}
