@@ -12,6 +12,8 @@ export const Footer = () => {
             href="https://github.com/singhvivek7"
             target="_blank"
             className="text-lg transition-colors hover:text-primary"
+            data-tooltip-id="tooltip"
+            data-tooltip-content="@singhvivek7"
           >
             <FaGithub />
           </Link>
@@ -19,6 +21,8 @@ export const Footer = () => {
             href="https://www.linkedin.com/in/singhvivek7/"
             target="_blank"
             className="text-lg transition-colors hover:text-primary"
+            data-tooltip-id="tooltip"
+            data-tooltip-content="@singhvivek7"
           >
             <FaLinkedin />
           </Link>
@@ -27,6 +31,8 @@ export const Footer = () => {
             href="https://twitter.com/v1v3k__"
             target="_blank"
             className="text-lg transition-colors hover:text-primary"
+            data-tooltip-id="tooltip"
+            data-tooltip-content="@v1v3k__"
           >
             <FaXTwitter />
           </Link>
@@ -34,6 +40,8 @@ export const Footer = () => {
             href="https://www.instagram.com/ig_v1v3k"
             target="_blank"
             className="text-lg transition-colors hover:text-primary"
+            data-tooltip-id="tooltip"
+            data-tooltip-content="@ig_v1v3k"
           >
             <FaInstagram />
           </Link>

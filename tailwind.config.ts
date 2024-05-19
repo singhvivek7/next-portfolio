@@ -9,16 +9,18 @@ const config: Config = {
         foreground: 'hsl(var(--foreground))',
         primary: 'hsl(var(--primary))',
         secondary: 'hsl(var(--secondary))',
-        tertiary: 'hsl(var(--tertiary))',
+        tertiary: 'hsl(var(--tertiary))'
       },
       zIndex: {
         header: '99',
+        tooltip: '100',
+        cursor: '999'
       },
       fontFamily: {
-        primary: 'var(--font-primary)',
-      },
-    },
+        primary: 'var(--font-primary)'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
 export default config;

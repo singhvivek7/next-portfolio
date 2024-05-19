@@ -1,5 +1,6 @@
 'use client';
 
+import { Tooltip } from 'react-tooltip';
 import { AnimatedCursor } from '@/components';
 
 interface Props {
@@ -9,6 +10,7 @@ interface Props {
 export const Layout = ({ children }: Props) => {
   return (
     <>
+      <Tooltip id="tooltip" className="z-tooltip" />
       <AnimatedCursor />
       {children}
     </>

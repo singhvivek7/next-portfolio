@@ -30,11 +30,12 @@ export const Header = () => {
           >
             Projects
           </Link>
-          {/* <Link
+          <Link
             href="/#experience"
-            className="hover:text-primary transition-colors">
-            Experience
-          </Link> */}
+            className="transition-colors hover:text-primary"
+          >
+            Edu. & Exp.
+          </Link>
           <Link
             href="/#contact"
             className="transition-colors hover:text-primary"
@@ -78,12 +79,13 @@ export const Header = () => {
           >
             Projects
           </Link>
-          {/* <Link
+          <Link
             href="/#experience"
             onClick={() => setIsNavOpen(false)}
-            className="text-foreground w-full py-3 border-b px-[4.15%] hover:bg-primary/10 active:text-primary hover:text-primary transition-all">
-            Experience
-          </Link> */}
+            className="w-full border-b px-[4.15%] py-3 text-foreground transition-all hover:bg-primary/10 hover:text-primary active:text-primary"
+          >
+            Edu. & Exp.
+          </Link>
           <Link
             href="/#contact"
             onClick={() => setIsNavOpen(false)}

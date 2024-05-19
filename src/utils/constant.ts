@@ -119,3 +119,41 @@ export const MY_PROJECTS: MyProjects[] = [
   //   ],
   // },
 ];
+
+export const EXPERIENCE = [
+  {
+    id: randomUUID(),
+    name: 'High School, Kusaundhi (Bihar, India)',
+    position: 'Matriculation (Xth)',
+    joinDate: '04/01/2013', // MM/DD/YYYY
+    endDate: '04/01/2014'
+  },
+  {
+    id: randomUUID(),
+    name: 'Gopeshwar Collage, Hathua (Bihar, India)',
+    position: 'Intermediate (Mathematics)',
+    joinDate: '04/01/2014', // MM/DD/YYYY
+    endDate: '04/01/2016'
+  },
+  {
+    id: randomUUID(),
+    name: 'Nalanda Open University, Patna (Bihar, India)',
+    position: 'Graduation (B.A.)',
+    joinDate: '04/01/2018', // MM/DD/YYYY
+    endDate: '04/01/2021'
+  },
+  {
+    id: randomUUID(),
+    name: 'Newton School, Banglore (Karnataka, India)',
+    position: 'Full Stack Developement (MERN)',
+    joinDate: '09/01/2022', // MM/DD/YYYY
+    endDate: '09/01/2023'
+  },
+  {
+    id: randomUUID(),
+    name: 'Webeligth Solution, Ahmedabad (Gujarat, India)',
+    position: 'Jr. Reactjs Developer',
+    joinDate: '09/04/2023', // MM/DD/YYYY
+    endDate: null
+  }
+];
