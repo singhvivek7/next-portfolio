@@ -75,10 +75,11 @@ export const MY_PROJECTS: MyProjects[] = [
     slug: 'vivek-next-portfolio',
     image: nextPortfolioImage,
     sortDescription:
-      'Personal portfolio website using Next.js and TailwindCSS, Personal portfolio website using Next.js and TailwindCSS, Personal portfolio website using Next.js and TailwindCSS, Personal portfolio website using Next.js and TailwindCSS',
+      'Personal portfolio website using Next.js, TypeScript, TailwindCSS, and more, showcasing my skills and projects with a modern design.',
     description: {
-      para1: 'Personal portfolio website created using Next.js and TailwindCSS',
-      para2: 'Deployed using Vercel',
+      para1:
+        'My personal portfolio website is a showcase of my skills, projects, and professional journey. Built with React and Next.js, it features a clean and modern design, highlighting my expertise in Java, JavaScript, TypeScript, Python, and various web development frameworks and libraries. The website includes detailed sections about me, my skills, and my past projects, providing visitors with a comprehensive view of my work and capabilities. It also offers easy navigation and a responsive layout, ensuring a seamless user experience across all devices.',
+      para2: 'Deployed using Vercel.',
     },
     url: 'https://vivekkk.vercel.app/',
     github: 'https://github.com/singhvivek7/next-portfolio',
@@ -86,6 +87,10 @@ export const MY_PROJECTS: MyProjects[] = [
       { name: 'Next.js', id: randomUUID(), color: '#000000' },
       { name: 'TypeScript', id: randomUUID(), color: '#007acc' },
       { name: 'TailwindCSS', id: randomUUID(), color: '#38b2ac' },
+      { name: 'React Hook Form', id: randomUUID(), color: '#ec5990' },
+      { name: 'Nodemailer', id: randomUUID(), color: '#007bff' },
+      { name: 'Framer Motion', id: randomUUID(), color: '#0055FF' },
+      { name: 'Google reCAPTCHA', id: randomUUID(), color: '#4285F4' },
       { name: 'Vercel', id: randomUUID(), color: '#000000' },
       { name: 'GitHub', id: randomUUID(), color: '#181717' },
     ],

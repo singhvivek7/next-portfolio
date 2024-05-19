@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { fontPrimary } from '@/utils/fonts';
-import { Header, Layout } from '@/components';
+import { Footer, Header, Layout } from '@/components';
+import { Toaster } from '@/components';
 
 import './globals.css';
 
@@ -20,6 +21,8 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <Layout>
           <Header />
           {children}
+          <Footer />
+          <Toaster position="top-right" theme="light" />
         </Layout>
       </body>
     </html>

@@ -11,3 +11,7 @@ export * from './LogoAnimation';
 export * from './AnimatedCursor';
 
 export * from './Layout';
+
+export * from './Sonner';
+
+export * from './Footer';
