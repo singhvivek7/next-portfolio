@@ -14,6 +14,9 @@ const config: Config = {
       zIndex: {
         header: '99',
       },
+      fontFamily: {
+        primary: 'var(--font-primary)',
+      },
     },
   },
   plugins: [],
