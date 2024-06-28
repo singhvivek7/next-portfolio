@@ -22,11 +22,13 @@ export const AnimatedCursor = () => {
 
   return (
     <motion.div
-      className="cursor"
+      className="cursor hidden items-center justify-center lg:flex"
       style={{
         translateX: cursorX,
         translateY: cursorY
       }}
-    />
+    >
+      <span className="inline-block h-2 w-2 rounded-full bg-primary opacity-50" />
+    </motion.div>
   );
 };
