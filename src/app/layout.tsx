@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
+import type { PropsWithChildren } from 'react';
 
 import { fontPrimary } from '@/utils/fonts';
 import { Footer, Header, Layout, Toaster } from '@/components';
+import { appConfig } from '@/config/app.config';
 
 import './globals.css';
 import './react-tooltip.css';
-import { appConfig } from '@/config/app.config';
 
 export const metadata: Metadata = {
   title: 'Vivek Kumar - Portfolio',
@@ -45,11 +46,7 @@ export const metadata: Metadata = {
   }
 };
 
-interface RootLayoutProps {
-  readonly children: React.ReactNode;
-}
-
-const RootLayout = ({ children }: RootLayoutProps) => {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
       <body

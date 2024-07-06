@@ -1,3 +1,4 @@
+import { unstable_noStore } from 'next/cache';
 import { SectionHeader } from '@/components';
 import { EXPERIENCE } from '@/utils/constant';
 import {
@@ -6,6 +7,7 @@ import {
 } from '@/utils/helperFunctions';
 
 export const Experience = () => {
+  unstable_noStore();
   return (
     <section id="experience" className="w-full py-24">
       <div className="mx-auto w-11/12 lg:w-3/4">
