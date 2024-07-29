@@ -148,7 +148,7 @@ export const EXPERIENCE = [
   },
   {
     id: nanoid(),
-    name: 'Newton School, Banglore (Karnataka, India)',
+    name: 'Newton School, Bengaluru (Karnataka, India)',
     position: 'Full Stack Developement (MERN)',
     joinDate: '09/01/2022', // MM/DD/YYYY
     endDate: '09/01/2023'
@@ -162,7 +162,7 @@ export const EXPERIENCE = [
   },
   {
     id: nanoid(),
-    name: 'PayBolt Tech, Kengaluru (Karnataka, India)',
+    name: 'PayBolt Tech, Bengaluru (Karnataka, India)',
     position: 'SDE I',
     joinDate: '07/21/2024', // MM/DD/YYYY
     endDate: null
