@@ -158,6 +158,13 @@ export const EXPERIENCE = [
     name: 'Webeligth Solution, Ahmedabad (Gujarat, India)',
     position: 'Jr. Reactjs Developer',
     joinDate: '09/04/2023', // MM/DD/YYYY
+    endDate: '07/19/2024' // MM/DD/YYYY
+  },
+  {
+    id: nanoid(),
+    name: 'PayBolt Tech, Kengaluru (Karnataka, India)',
+    position: 'SDE I',
+    joinDate: '07/21/2024', // MM/DD/YYYY
     endDate: null
   }
 ];
