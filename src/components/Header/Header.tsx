@@ -13,8 +13,8 @@ export const Header = () => {
     <header className="fixed left-0 top-0 z-header h-20 w-full border-b bg-background text-foreground shadow-md">
       <div className="relative mx-auto flex h-full w-11/12 items-center justify-between lg:w-3/4">
         <Link href="/#home" className="logo">
-          <span>Vivekkk</span>
-          <div className="beta">beta</div>
+          <span>TheVivek</span>
+          <div className="beta">tech</div>
         </Link>
 
         <nav className="hidden gap-5 text-lg font-semibold uppercase lg:flex xl:gap-10">
