@@ -1,1 +1,0 @@
-declare type AnyType = any;

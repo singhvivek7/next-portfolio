@@ -1,6 +1,6 @@
 name: Building App
 
-on: 
+on:
   push:
     branches:
       - '**'

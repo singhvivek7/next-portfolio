@@ -1,1 +1,0 @@
-export { AnimatedCursor } from './AnimatedCursor';

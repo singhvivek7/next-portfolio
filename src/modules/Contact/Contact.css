@@ -1,8 +1,0 @@
-.contact-wrapper {
-  @apply relative min-h-dvh w-full bg-primary/80 py-24 text-background;
-
-  &::before {
-    @apply absolute inset-0 z-[-1] opacity-100 content-[""];
-    background: url('./../../../public/imgs/bg.svg');
-  }
-}

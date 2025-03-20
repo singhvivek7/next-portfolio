@@ -1,1 +1,0 @@
-export { TextGenerate } from './TextGenerate';

@@ -1,1 +1,0 @@
-export { LogoAnimation } from './LogoAnimation';

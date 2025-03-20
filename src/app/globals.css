@@ -2,81 +2,143 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* --background: hsl(0 0% 96%);
-  --foreground: hsl(221 24% 13%);
-  --primary: hsl(208.22 100% 36.27%);
-  --secondary: hsl(163 99% 38%);
-  --tertiary: hsl(221 7% 44%);
-  */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 11.1% 3.53%;
 
-  --background: 0 0% 96%;
-  --foreground: 221 24% 13%;
-  --primary: 208.22 100% 36.27%;
-  --secondary: 163 99% 38%;
-  --tertiary: 221 7% 44%;
-}
+    --card: 0 0% 100%;
+    --card-foreground: 210 11.1% 3.53%;
 
-html {
-  @apply scroll-smooth text-tertiary;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11.1% 3.53%;
 
-  ::-webkit-scrollbar {
-    @apply h-[10px] w-[10px];
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
   }
 
-  ::-webkit-scrollbar-track {
-    @apply bg-tertiary/30;
-  }
+  .dark {
+    --background: 210 11.1% 3.53%;
+    --foreground: 0 0% 98%;
 
-  ::-webkit-scrollbar-thumb {
-    @apply rounded-lg bg-primary;
-  }
+    --card: 210 11.1% 3.53%;
+    --card-foreground: 0 0% 98%;
 
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-primary;
-  }
+    --popover: 210 11.1% 3.53%;
+    --popover-foreground: 0 0% 98%;
 
-  ::selection {
-    @apply bg-[#ef233c] text-white;
-  }
-}
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
 
-.cursor {
-  @apply pointer-events-none fixed left-0 right-0 z-cursor h-8 w-8 rounded-full border border-primary;
-  transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
 
-.animated__logo {
-  @apply select-none;
-  circle {
-    @apply fill-tertiary/5;
-  }
-  path {
-    @apply stroke-primary;
-    stroke-dasharray: 100;
-    stroke-dashoffset: 100;
-    stroke-width: 1px;
-    animation: dash 3s linear forwards infinite alternate;
-  }
-}
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
 
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 300;
-  }
-  40% {
-    fill: #00000000;
-  }
-  100% {
-    @apply fill-primary;
-    stroke-dashoffset: 0;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
   }
 }
 
-.logo {
-  @apply relative text-center text-4xl font-black uppercase;
-
-  .beta {
-    @apply absolute -right-7 bottom-1.5 rounded bg-[#ef233c] px-1 text-[8px] leading-3 text-background;
+@layer base {
+  * {
+    @apply border-border;
   }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+h3 code {
+  @apply !text-lg md:!text-xl;
+}
+
+pre {
+  @apply !px-0 rounded-lg overflow-x-auto py-4;
+}
+
+pre [data-line] {
+  @apply px-4;
+}
+
+code {
+  @apply text-sm md:text-base !leading-loose;
+}
+
+pre > code {
+  counter-reset: line;
+}
+
+code[data-theme*=' '],
+code[data-theme*=' '] span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  code[data-theme*=' '],
+  code[data-theme*=' '] span {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+}
+
+code[data-line-numbers] {
+  counter-reset: line;
+}
+
+code[data-line-numbers] > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+  @apply inline-block w-4 mr-4 text-right text-gray-500;
+}
+
+code {
+  counter-reset: line;
+}
+
+code > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+
+  /* Other styling */
+  display: inline-block;
+  width: 1rem;
+  margin-right: 2rem;
+  text-align: right;
+  color: gray;
+}
+
+code[data-line-numbers-max-digits='2'] > [data-line]::before {
+  width: 2rem;
+}
+
+code[data-line-numbers-max-digits='3'] > [data-line]::before {
+  width: 3rem;
 }
