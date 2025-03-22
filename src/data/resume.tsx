@@ -78,7 +78,7 @@ export const DATA: DataType = {
       href: 'https://paybolt.in',
       badges: [],
       location: 'Bengaluru, Karnataka',
-      title: 'Software Development Engineer - Full Stack',
+      title: 'Software Development Engineer - I',
       logoUrl: '/paybolt.png',
       start: 'July 2024',
       end: 'Present',
