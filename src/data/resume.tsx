@@ -20,6 +20,9 @@ export const DATA: DataType = {
     'Nest.js',
     'TypeScript',
     'JavaScript',
+    'Three.js',
+    'WebGL',
+    'Zustand',
     'Redux Toolkit',
     'React-Query',
     'TypeORM',
@@ -95,7 +98,7 @@ export const DATA: DataType = {
       start: 'September 2023',
       end: 'July 2024',
       description:
-        'Delivered 3+ production-grade solutions using modern JavaScript/TypeScript stack, maintaining 98% code coverage and implementing best practices in web security. Led team of 3 junior developers in rebuilding organization website with Next.js, increasing page load speed by 40% and improving SEO ranking by 15 positions. Implemented server-side rendering and dynamic routing strategies, improving application performance by 35% and enhancing user experience metrics.',
+        'Delivered 3+ production-grade solutions using modern TypeScript stack, maintaining 98% code coverage and implementing best practices in web security. Led team of 3 junior developers in rebuilding organization website with Next.js, increasing page load speed by 40% and improving SEO ranking by 15 positions. Implemented server-side rendering and dynamic routing strategies, improving application performance by 35% and enhancing user experience metrics.',
     },
   ],
   education: [
