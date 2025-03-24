@@ -47,6 +47,11 @@ export const metadata: Metadata = {
     google: '',
     yandex: '',
   },
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+    shortcut: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({

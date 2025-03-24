@@ -142,3 +142,27 @@ code[data-line-numbers-max-digits='2'] > [data-line]::before {
 code[data-line-numbers-max-digits='3'] > [data-line]::before {
   width: 3rem;
 }
+
+html {
+  @apply scroll-smooth;
+
+  ::-webkit-scrollbar {
+    @apply h-[10px] w-[10px];
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-primary-foreground/40;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-secondary-foreground/45;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+
+  ::selection {
+    @apply bg-[#ffff77] text-black;
+  }
+}
