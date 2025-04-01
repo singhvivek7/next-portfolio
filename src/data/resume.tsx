@@ -1,5 +1,5 @@
 import { Icons } from '@/components/icons'
-import { HomeIcon } from 'lucide-react'
+import { HomeIcon, FileDown } from 'lucide-react'
 import { DataType } from './types'
 
 export const DATA: DataType = {
@@ -64,6 +64,12 @@ export const DATA: DataType = {
         name: 'LeetCode',
         url: 'https://leetcode.com/singhvivek7',
         icon: Icons.leetcode,
+        navbar: true,
+      },
+      Resume: {
+        name: 'Download Resume',
+        url: 'https://drive.google.com/file/d/1zbJNpXDH6xeQVr_UJ64EmBtwoOxqT5be/view?usp=drive_link',
+        icon: Icons.fileDown,
         navbar: true,
       },
       email: {
