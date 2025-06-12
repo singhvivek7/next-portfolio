@@ -4,12 +4,12 @@ import { TooltipProvider } from '@/components/ui/tooltip'
 import { DATA } from '@/data/resume'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
-import { Roboto as FontSans } from 'next/font/google'
+import { Alegreya as FontSans } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
 const fontSans = FontSans({
-  weight: ['400'],
+  weight: ['400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
   variable: '--font-sans',
 })
