@@ -83,6 +83,18 @@ export const DATA: DataType = {
 
   work: [
     {
+      company: 'Traya Health',
+      href: 'https://traya.health',
+      badges: [],
+      location: 'Bengaluru, Karnataka',
+      title: 'Software Development Engineer - I',
+      logoUrl: '/traya.avif',
+      start: 'June 2025',
+      end: 'Present',
+      description:
+        '',
+    },
+    {
       company: 'PayBolt Technologies',
       href: 'https://paybolt.in',
       badges: [],
@@ -90,7 +102,7 @@ export const DATA: DataType = {
       title: 'Software Development Engineer - I',
       logoUrl: '/paybolt.png',
       start: 'July 2024',
-      end: 'Present',
+      end: 'May 2025',
       description:
         'Architected and implemented mission-critical payment gateway system processing 1M+ daily transactions with 99.99% uptime using TypeScript, Next.js, Nest.js, and PostgreSQL. Designed and developed responsive merchant dashboard with real-time transaction monitoring, reducing payment reconciliation time by 65% while maintaining PCI-DSS compliance. Implemented microservice architecture with API gateway pattern, resulting in 30% improved scalability during peak transaction periods and seamless third-party banking integrations.',
     },
