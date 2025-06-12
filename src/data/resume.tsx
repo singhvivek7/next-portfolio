@@ -85,7 +85,7 @@ export const DATA: DataType = {
     {
       company: 'Traya Health',
       href: 'https://traya.health',
-      badges: [],
+      badges: ['health'],
       location: 'Bengaluru, Karnataka',
       title: 'Software Development Engineer - I',
       logoUrl: '/traya.avif',
@@ -97,7 +97,7 @@ export const DATA: DataType = {
     {
       company: 'PayBolt Technologies',
       href: 'https://paybolt.in',
-      badges: [],
+      badges: ['fintech'],
       location: 'Bengaluru, Karnataka',
       title: 'Software Development Engineer - I',
       logoUrl: '/paybolt.png',
