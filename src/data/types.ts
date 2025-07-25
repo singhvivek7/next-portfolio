@@ -13,7 +13,7 @@ export type Contact = {
     LinkedIn: SocialLink
     X?: SocialLink
     LeetCode: SocialLink
-    Resume: SocialLink
+    Resume?: SocialLink
     email: SocialLink
   }
 }
