@@ -12,7 +12,7 @@ export const DATA: DataType = {
     'Software Development Engineer, building scalable web apps with modern stacks.',
   summary:
     'Experienced Full-Stack JavaScript/TypeScript Engineer building enterprise solutions with Next.js and NestJS. Implemented 5+ production systems featuring micro frontend architecture, SSO authentication, React UIs with Redux/Zustand state management, and secure Node.js microservices.',
-  avatarUrl: '/me.jpeg',
+  avatarUrl: '/me.jpg',
   skills: [
     'Next.js',
     'React.js',
@@ -54,24 +54,24 @@ export const DATA: DataType = {
         icon: Icons.linkedin,
         navbar: true,
       },
-      // X: {
-      //   name: 'X',
-      //   url: 'https://x.com/V1V3K__',
-      //   icon: Icons.x,
-      //   navbar: true,
-      // },
+      X: {
+        name: 'X',
+        url: 'https://x.com/V1V3K__',
+        icon: Icons.x,
+        navbar: true,
+      },
       LeetCode: {
         name: 'LeetCode',
         url: 'https://leetcode.com/singhvivek7',
         icon: Icons.leetcode,
         navbar: true,
       },
-      Resume: {
-        name: 'Download Resume',
-        url: 'https://drive.google.com/file/d/1zbJNpXDH6xeQVr_UJ64EmBtwoOxqT5be/view?usp=drive_link',
-        icon: Icons.fileDown,
-        navbar: true,
-      },
+      // Resume: {
+      //   name: 'Download Resume',
+      //   url: 'https://drive.google.com/file/d/1zbJNpXDH6xeQVr_UJ64EmBtwoOxqT5be/view?usp=drive_link',
+      //   icon: Icons.fileDown,
+      //   navbar: true,
+      // },
       email: {
         name: 'Send Email',
         url: 'mailto:singhvivek1999@yahoo.com',
@@ -92,7 +92,7 @@ export const DATA: DataType = {
       start: 'June 2025',
       end: 'Present',
       description:
-        '',
+        'Built a personalized recommendation system by processing user form data using custom algorithms, and developed high-performance REST APIs with optimized database operations and caching strategies to enhance response times. Worked on a tenant-based CRM dashboard for real-time data management and visualization, and designed responsive admin interfaces with robust form validation and seamless backend integration.',
     },
     {
       company: 'PayBolt Technologies',
