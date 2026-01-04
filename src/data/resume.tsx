@@ -145,61 +145,33 @@ export const DATA: DataType = {
       end: 'June 2021',
     },
   ],
-  projects: [],
-  // projects: [
-  //   {
-  //     title: 'Payment Gateway System',
-  //     href: '#',
-  //     dates: 'July 2024 - Present',
-  //     active: true,
-  //     description:
-  //       'Led development of secure payment gateway with banking API integration, improving success rates by 20% and reducing processing errors by 30% through automated reconciliation and PCI-DSS compliance. Responsible for developing back-end architecture, UI, API integration, and CI/CD pipelines.',
-  //     technologies: [
-  //       'Next.js',
-  //       'Nest.js',
-  //       'PostgreSQL',
-  //       'Redis',
-  //       'Redux-Toolkit',
-  //       'TailwindCSS',
-  //       'React-Query',
-  //       'AWS (EC2, RDS, S3, etc)',
-  //     ],
-  //     links: [
-  //       {
-  //         type: 'Website',
-  //         href: '#',
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //     ],
-  //     image: '',
-  //     video: '',
-  //   },
-  //   {
-  //     title: 'One Global SaaS',
-  //     href: '#',
-  //     dates: 'January 2024 - July 2024',
-  //     active: false,
-  //     description:
-  //       "One Global Holding is a venture-building company that embodies the essence of digital transformation and restores trust between investors and ventures. Responsible for developing its different SaaS platform's user interface with module federation concept, API, and integrated that API to frontend. Also worked on authentication and authorization with Single Sign On(SSO).",
-  //     technologies: [
-  //       'Next.js',
-  //       'React.js',
-  //       'Redux-Toolkit',
-  //       'TailwindCSS',
-  //       'React-Query',
-  //       'Nest.js',
-  //       'MySQL',
-  //       'TypeORM',
-  //     ],
-  //     links: [
-  //       {
-  //         type: 'Website',
-  //         href: '#',
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //     ],
-  //     image: '',
-  //     video: '',
-  //   },
-  // ],
+  projects: [
+    {
+      title: 'NextLink - Modern URL Shortner',
+      href: 'https://link.vivekkk.in',
+      dates: 'July 2025 - Present',
+      active: true,
+      description: 'A high-performance URL shortener with sub-millisecond link creation and redirects, smart caching, custom expiry, and automated cleanup. It offers real-time analytics with geo and device insights, secure JWT-based auth with role-based access (including a super admin view), and a modern, responsive dashboard built with Radix UI, Tailwind, Bun, and Next.js for fast, scalable performance.',
+      technologies: [
+        'Next.js',
+        'Bun.js',
+        'MongoDB',
+        'Prisma',
+        'Motion',
+        'JWT',
+        'TailwindCSS',
+        'React-Query',
+        'Vercel',
+      ],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://link.vivekkk.in',
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: '',
+      video: '',
+    }
+  ],
 }
