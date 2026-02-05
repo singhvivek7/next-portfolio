@@ -172,6 +172,33 @@ export const DATA: DataType = {
       ],
       image: '',
       video: '',
+    },
+    {
+      title: 'Aurex - Modern Payment Gateway',
+      href: 'https://aurex.vivekkk.in',
+      dates: 'Feb 2026 - Present',
+      active: true,
+      description: 'Aurex is a comprehensive payment processing platform that provides a robust, secure, and developer-friendly solution for accepting and managing online payments. Built with cutting-edge technologies, Aurex offers seamless integration, real-time analytics, and enterprise-grade reliability.',
+      technologies: [
+        'Next.js',
+        'Bun.js',
+        'MongoDB',
+        'Prisma',
+        'Motion',
+        'JWT',
+        'TailwindCSS',
+        'React-Query',
+        'Vercel',
+      ],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://aurex.vivekkk.in',
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: '',
+      video: '',
     }
   ],
 }
