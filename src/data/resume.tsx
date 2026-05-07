@@ -5,7 +5,7 @@ import { DataType } from './types'
 export const DATA: DataType = {
   name: 'Vivek Kumar',
   initials: 'VK',
-  url: 'https://thevivek.tech',
+  url: 'https://vivekkk.in',
   location: 'Bengaluru, India',
   locationLink: 'https://www.google.com/maps/place/bengaluru',
   description:
