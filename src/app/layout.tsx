@@ -28,6 +28,14 @@ export const metadata: Metadata = {
     siteName: `${DATA.name}`,
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: `${DATA.url}/opengraph-image.png`,
+        width: 1200,
+        height: 630,
+        alt: DATA.name,
+      },
+    ],
   },
   robots: {
     index: true,
@@ -43,6 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     title: `${DATA.name}`,
     card: 'summary_large_image',
+    images: [`${DATA.url}/opengraph-image.png`],
   },
   verification: {
     google: '',
