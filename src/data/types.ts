@@ -18,6 +18,13 @@ export type Contact = {
   }
 }
 
+export type Promotion = {
+  title: string
+  start: string
+  end: string
+  description?: string
+}
+
 export type WorkExperience = {
   company: string
   href: string
@@ -28,6 +35,7 @@ export type WorkExperience = {
   start: string
   end: string
   description: string
+  promotions?: Promotion[]
 }
 
 export type Education = {
@@ -37,6 +45,7 @@ export type Education = {
   logoUrl: string
   start: string
   end: string
+  location?: string
 }
 
 export type Project = {

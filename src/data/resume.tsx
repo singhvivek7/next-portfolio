@@ -87,12 +87,28 @@ export const DATA: DataType = {
       href: 'https://traya.health',
       badges: [],
       location: 'Bengaluru, Karnataka',
-      title: 'Software Development Engineer - I',
+      title: 'Software Development Engineer - II',
       logoUrl: '/traya.avif',
       start: 'June 2025',
       end: 'Present',
       description:
         'Built a personalized recommendation system by processing user form data using custom algorithms, and developed high-performance REST APIs with optimized database operations and caching strategies to enhance response times. Worked on a tenant-based CRM dashboard for real-time data management and visualization, and designed responsive admin interfaces with robust form validation and seamless backend integration.',
+      promotions: [
+        {
+          title: 'Software Development Engineer - II',
+          start: 'April 2026',
+          end: 'Present',
+          description:
+            'Leading feature development for the recommendation engine and CRM dashboard. Mentoring junior developers and owning end-to-end delivery for key product initiatives.',
+        },
+        {
+          title: 'Software Development Engineer - I',
+          start: 'June 2025',
+          end: 'April 2026',
+          description:
+            'Contributed to backend APIs and front-end component library. Built data visualisation widgets and integrated third-party health analytics SDKs.',
+        },
+      ],
     },
     {
       company: 'PayBolt Technologies',
@@ -127,6 +143,7 @@ export const DATA: DataType = {
       logoUrl: '/ignou.png',
       start: 'January 2025',
       end: 'Present',
+      location: 'New Delhi, India',
     },
     {
       school: 'Newton School',
@@ -135,6 +152,7 @@ export const DATA: DataType = {
       logoUrl: '/newton.jpeg',
       start: 'August 2022',
       end: 'August 2023',
+      location: 'Bengaluru, India',
     },
     {
       school: 'Nalanda Open University',
@@ -143,6 +161,7 @@ export const DATA: DataType = {
       logoUrl: '/nalanda.jpeg',
       start: 'July 2018',
       end: 'June 2021',
+      location: 'Patna, Bihar',
     },
   ],
   projects: [

@@ -1,3 +1,5 @@
+'use client'
+
 import { Badge } from '@/components/ui/badge'
 import {
   Card,
@@ -7,6 +9,7 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
+import { LinkPreview } from '@/components/link-preview'
 import Image from 'next/image'
 import Link from 'next/link'
 import Markdown from 'react-markdown'
@@ -72,7 +75,15 @@ export function ProjectCard({
       </Link>
       <CardHeader className="px-2">
         <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
+          <CardTitle className="mt-1 text-base">
+            {href ? (
+              <LinkPreview href={href} className="hover:underline">
+                {title}
+              </LinkPreview>
+            ) : (
+              title
+            )}
+          </CardTitle>
           <time className="font-sans text-xs">{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace('https://', '').replace('www.', '').replace('/', '')}
