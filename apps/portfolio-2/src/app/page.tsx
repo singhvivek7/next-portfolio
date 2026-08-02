@@ -658,7 +658,7 @@ export default function Page() {
                   {companyGroup.roles.map((role, rIdx) => (
                     <div key={rIdx} className="relative">
                       {/* Timeline Dot */}
-                      <span className={`absolute -left-[29px] top-1.5 w-3 h-3 rounded-full border-2 border-[#131417] ${
+                      <span className={`absolute -left-[31px] top-1.5 w-3 h-3 rounded-full border-2 border-[#131417] ${
                         role.isLive
                           ? 'bg-emerald-400 shadow-[0_0_8px_#4ADE80]'
                           : role.isPromotion
