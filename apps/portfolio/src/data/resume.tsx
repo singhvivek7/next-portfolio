@@ -20,6 +20,8 @@ export const DATA: DataType = {
     'Nest.js',
     'TypeScript',
     'JavaScript',
+    'Golang',
+    'Java',
     'Three.js',
     'WebGL',
     'Zustand',
@@ -92,21 +94,21 @@ export const DATA: DataType = {
       start: 'June 2025',
       end: 'Present',
       description:
-        'Built a personalized recommendation system by processing user form data using custom algorithms, and developed high-performance REST APIs with optimized database operations and caching strategies to enhance response times. Worked on a tenant-based CRM dashboard for real-time data management and visualization, and designed responsive admin interfaces with robust form validation and seamless backend integration.',
+        'Own and scale the core recommendations microservice in Node.js, Express.js, and NestJS, delivering personalized healthcare experiences across Shopify, mobile app, and web platforms.',
       promotions: [
         {
           title: 'Software Development Engineer - II',
           start: 'April 2026',
           end: 'Present',
           description:
-            'Leading feature development for the recommendation engine and CRM dashboard. Mentoring junior developers and owning end-to-end delivery for key product initiatives.',
+            'Own and scale the core recommendations microservice in Node.js, Express.js, and NestJS, delivering personalized healthcare experiences across Shopify, mobile app, and web platforms. Engineer high-throughput backend APIs and real-time data pipelines to ensure high availability and resilient service scaling under high user traffic.',
         },
         {
           title: 'Software Development Engineer - I',
           start: 'June 2025',
           end: 'April 2026',
           description:
-            'Contributed to backend APIs and front-end component library. Built data visualisation widgets and integrated third-party health analytics SDKs.',
+            'Architected a rules engine, intelligent caching layer, and API payload optimization, slashing result-page response latency from ~500ms to < 100ms across app, web, and Shopify. Developed high-performance NestJS REST APIs and optimized PostgreSQL database queries, building responsive admin interfaces with robust form validation.',
         },
       ],
     },
@@ -118,9 +120,9 @@ export const DATA: DataType = {
       title: 'Software Development Engineer - I',
       logoUrl: '/paybolt.png',
       start: 'July 2024',
-      end: 'May 2025',
+      end: 'June 2025',
       description:
-        'Architected and implemented mission-critical payment gateway system processing 1M+ daily transactions with 99.99% uptime using TypeScript, Next.js, Nest.js, and PostgreSQL. Designed and developed responsive merchant dashboard with real-time transaction monitoring, reducing payment reconciliation time by 65% while maintaining PCI-DSS compliance. Implemented microservice architecture with API gateway pattern, resulting in 30% improved scalability during peak transaction periods and seamless third-party banking integrations.',
+        'Architected high-throughput backend APIs and microservices powering core payment workflows (UPI, QR payments, payment links, and connected banking). Designed PostgreSQL data persistence layers and system schemas for high-performance transaction processing on AWS.',
     },
     {
       company: 'Webelight Solutions',
@@ -132,7 +134,7 @@ export const DATA: DataType = {
       start: 'September 2023',
       end: 'July 2024',
       description:
-        'Delivered 3+ production-grade solutions using modern TypeScript stack, maintaining 98% code coverage and implementing best practices in web security. Led team of 3 junior developers in rebuilding organization website with Next.js, increasing page load speed by 40% and improving SEO ranking by 15 positions. Implemented server-side rendering and dynamic routing strategies, improving application performance by 35% and enhancing user experience metrics.',
+        'Shipped 3+ production web solutions using Next.js, React Hooks, SASS, and Webpack, leading 3 junior developers and lifting team delivery efficiency by 15%. Enforced clean-code standards, reusable UI component architecture, and version control (Git) best practices while conducting internal technical workshops on Sentry and Docker.',
     },
   ],
   education: [
@@ -193,26 +195,23 @@ export const DATA: DataType = {
       video: '',
     },
     {
-      title: 'Aurex - Modern Payment Gateway',
-      href: 'https://aurex.vivekkk.in',
+      title: 'RenderPDF - Document Generation Microservice',
+      href: 'https://pdf.vivekkk.in',
       dates: 'Feb 2026 - Present',
       active: true,
-      description: 'Aurex is a comprehensive payment processing platform that provides a robust, secure, and developer-friendly solution for accepting and managing online payments. Built with cutting-edge technologies, Aurex offers seamless integration, real-time analytics, and enterprise-grade reliability.',
+      description: 'A high-performance HTML/Markdown-to-PDF rendering service with custom page templates, header/footer injection, webhooks, and sub-second PDF generation powered by headless browser workers.',
       technologies: [
         'Next.js',
-        'Bun.js',
-        'MongoDB',
-        'Prisma',
-        'Motion',
-        'JWT',
+        'Node.js',
+        'Puppeteer',
+        'TypeScript',
         'TailwindCSS',
-        'React-Query',
         'Vercel',
       ],
       links: [
         {
           type: 'Website',
-          href: 'https://aurex.vivekkk.in',
+          href: 'https://pdf.vivekkk.in',
           icon: <Icons.globe className="size-3" />,
         },
       ],
