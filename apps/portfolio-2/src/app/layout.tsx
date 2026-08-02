@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import { DATA } from "@/data/resume";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -21,8 +22,22 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vivek Kumar | Full-Stack Engineer",
-  description: "Backend-leaning full-stack engineer building distributed systems and responsive web applications.",
+  metadataBase: new URL(DATA.url),
+  title: `${DATA.name} | ${DATA.title}`,
+  description: DATA.bio,
+  openGraph: {
+    title: `${DATA.name} | ${DATA.title}`,
+    description: `${DATA.role} - ${DATA.tagline} ${DATA.bio}`,
+    url: DATA.url,
+    siteName: `${DATA.name} Portfolio`,
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${DATA.name} | ${DATA.title}`,
+    description: `${DATA.role} - ${DATA.tagline}`,
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
