@@ -23,6 +23,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Vivek Kumar | Full-Stack Engineer",
   description: "Backend-leaning full-stack engineer building distributed systems and responsive web applications.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
