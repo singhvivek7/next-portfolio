@@ -1,6 +1,7 @@
 export const DATA = {
   name: 'Vivek Kumar',
   initials: 'VK',
+  url: 'https://vivekkk.in',
   title: 'Full-Stack Engineer',
   role: 'SDE II @ Traya Health',
   availability: 'AVAILABLE FOR OPPORTUNITIES',

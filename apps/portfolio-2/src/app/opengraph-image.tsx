@@ -1,8 +1,9 @@
 import { ImageResponse } from "next/og";
+import { DATA } from "@/data/resume";
 
 export const runtime = "edge";
 
-export const alt = "Vivek Kumar - SDE II @ Traya Health | Full-Stack Engineer";
+export const alt = `${DATA.name} - ${DATA.role} | ${DATA.title}`;
 export const size = {
   width: 1200,
   height: 630,
@@ -10,6 +11,8 @@ export const size = {
 export const contentType = "image/png";
 
 export default async function Image() {
+  const topSkills = [...DATA.skills.backend.slice(0, 4), ...DATA.skills.frontend.slice(0, 3)];
+
   return new ImageResponse(
     (
       <div
@@ -80,7 +83,7 @@ export default async function Image() {
                 letterSpacing: "1px",
               }}
             >
-              AVAILABLE FOR OPPORTUNITIES
+              {DATA.availability}
             </span>
           </div>
 
@@ -96,7 +99,7 @@ export default async function Image() {
               letterSpacing: "-1px",
             }}
           >
-            Vivek Kumar
+            {DATA.name}
           </h1>
 
           <p
@@ -108,7 +111,7 @@ export default async function Image() {
               marginBottom: "20px",
             }}
           >
-            SDE II @ Traya Health
+            {DATA.role}
           </p>
 
           <p
@@ -120,12 +123,12 @@ export default async function Image() {
               marginBottom: "32px",
             }}
           >
-            Building distributed systems that scale & stay up. Engineering NestJS microservices, React/Next.js platforms, and AWS cloud infra.
+            {DATA.tagline} {DATA.bio}
           </p>
 
-          {/* Tech stack tags */}
+          {/* Tech stack tags derived centrally from DATA */}
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-            {["NestJS", "Node.js", "React", "Next.js", "AWS", "PostgreSQL", "TypeScript"].map((tech) => (
+            {topSkills.map((tech) => (
               <div
                 key={tech}
                 style={{
@@ -245,7 +248,7 @@ export default async function Image() {
               justifyContent: "space-between",
             }}
           >
-            <span>vivekkk.in</span>
+            <span>{DATA.url.replace('https://', '')}</span>
             <span>→</span>
           </div>
         </div>
