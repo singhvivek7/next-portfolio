@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#0B0C0E"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" stroke="#232428" stroke-width="1.5"/>
+  <text x="10" y="43" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="28" font-weight="800" fill="#F2F0EA" letter-spacing="-1">VK</text>
+  <circle cx="51" cy="40" r="4" fill="#FFA94D"/>
+</svg>
