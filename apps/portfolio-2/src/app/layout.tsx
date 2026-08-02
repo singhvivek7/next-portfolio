@@ -21,8 +21,23 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vivekkk.in"),
   title: "Vivek Kumar | Full-Stack Engineer",
   description: "Backend-leaning full-stack engineer building distributed systems and responsive web applications.",
+  openGraph: {
+    title: "Vivek Kumar | Full-Stack Engineer",
+    description: "SDE II @ Traya Health - Building distributed systems that scale & stay up. NestJS microservices, React/Next.js platforms, and AWS cloud infra.",
+    url: "https://vivekkk.in",
+    siteName: "Vivek Kumar Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vivek Kumar | Full-Stack Engineer",
+    description: "SDE II @ Traya Health - Building distributed systems that scale & stay up.",
+    creator: "@singhvivek7",
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
