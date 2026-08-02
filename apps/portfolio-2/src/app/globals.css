@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #0B0C0E;
+    color: #F2F0EA;
+  }
+
+  body {
+    background-color: #0B0C0E;
+    background-image: radial-gradient(circle, rgba(255, 169, 77, 0.055) 1px, transparent 1px);
+    background-size: 34px 34px;
+    font-family: var(--font-body), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background-color: #FFA94D;
+    color: #0B0C0E;
+  }
+}
+
+@keyframes logIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-log-in {
+  animation: logIn 0.4s ease forwards;
+}
