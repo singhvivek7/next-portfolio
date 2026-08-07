@@ -23,6 +23,9 @@
     --accent-hover: #FFB968;
     --accent-text: #1A1200;
     --dot-color: rgba(255, 169, 77, 0.055);
+
+    --hero-glow-1: rgba(255, 169, 77, 0.14);
+    --hero-glow-2: rgba(19, 20, 23, 0.96);
   }
 
   .light {
@@ -40,7 +43,10 @@
     --accent-amber: #2563EB;
     --accent-hover: #1D4ED8;
     --accent-text: #FFFFFF;
-    --dot-color: rgba(56, 189, 248, 0.14);
+    --dot-color: rgba(37, 99, 235, 0.08);
+
+    --hero-glow-1: rgba(37, 99, 235, 0.12);
+    --hero-glow-2: rgba(244, 247, 251, 0.98);
   }
 
   html {
@@ -83,33 +89,30 @@
 }
 
 /* LIGHT MODE COMPREHENSIVE OVERRIDES */
-.light .bg-\[\#0B0C0E\] {
+.light body {
+  background-color: var(--bg-main) !important;
+  color: var(--text-main) !important;
+}
+
+.light .bg-\[\#0B0C0E\],
+.light .bg-\[\#0B0C0E\]\/80,
+.light .bg-\[\#0B0C0E\]\/95 {
   background-color: var(--bg-main) !important;
 }
-.light .bg-\[\#0B0C0E\]\/80 {
-  background-color: rgba(244, 247, 251, 0.85) !important;
-}
-.light .bg-\[\#0B0C0E\]\/95 {
-  background-color: rgba(244, 247, 251, 0.95) !important;
-}
-.light .bg-\[\#16171B\] {
+
+.light .bg-\[\#16171B\],
+.light .bg-\[\#16181D\],
+.light .bg-\[\#1A1C23\] {
   background-color: var(--bg-card) !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
 }
-.light .bg-\[\#16181D\] {
-  background-color: var(--bg-card) !important;
-}
-.light .bg-\[\#131417\] {
-  background-color: var(--bg-elevated) !important;
-}
-.light .bg-\[\#0E0F12\] {
-  background-color: var(--bg-subtle) !important;
-}
+
+.light .bg-\[\#131417\],
 .light .bg-\[\#111215\] {
   background-color: var(--bg-elevated) !important;
 }
-.light .bg-\[\#1A1C23\] {
-  background-color: var(--bg-card) !important;
-}
+
+.light .bg-\[\#0E0F12\],
 .light .bg-\[\#15161A\] {
   background-color: var(--bg-subtle) !important;
 }
@@ -120,59 +123,83 @@
 .light .hover\:text-\[\#F2F0EA\]:hover {
   color: var(--text-main) !important;
 }
-.light .text-\[\#9A9691\] {
+
+.light .text-\[\#9A9691\],
+.light .text-\[\#7A7671\] {
   color: var(--text-muted) !important;
 }
 .light .hover\:text-\[\#9A9691\]:hover {
   color: var(--text-muted) !important;
 }
+
 .light .text-\[\#66625D\] {
   color: var(--text-dim) !important;
 }
-.light .text-\[\#7A7671\] {
-  color: var(--text-muted) !important;
-}
 
-.light .border-\[\#232428\] {
-  border-color: var(--border-main) !important;
-}
-.light .border-\[\#1B1C20\] {
-  border-color: var(--border-subtle) !important;
-}
+.light .border-\[\#232428\],
 .light .border-\[\#1A1C23\] {
   border-color: var(--border-main) !important;
 }
-.light .divide-\[\#232428\] > * + * {
-  border-color: var(--border-main) !important;
-}
-.light .divide-\[\#1B1C20\] > * + * {
+
+.light .border-\[\#1B1C20\] {
   border-color: var(--border-subtle) !important;
 }
 
+.light .divide-\[\#232428\] > * + * {
+  border-color: var(--border-main) !important;
+}
+
+/* ACCENT & BUTTON OVERRIDES FOR LIGHT MODE */
 .light .text-\[\#FFA94D\] {
   color: var(--accent-amber) !important;
 }
+.light .hover\:text-\[\#FFA94D\]:hover {
+  color: var(--accent-hover) !important;
+}
+.light .text-\[\#1A1200\] {
+  color: #FFFFFF !important;
+}
+
 .light .border-\[\#FFA94D\] {
   border-color: var(--accent-amber) !important;
 }
+.light .border-\[\#FFA94D\]\/20,
+.light .border-\[\#FFA94D\]\/30,
+.light .border-\[\#FFA94D\]\/40 {
+  border-color: rgba(37, 99, 235, 0.35) !important;
+}
+.light .hover\:border-\[\#FFA94D\]\/30:hover,
+.light .hover\:border-\[\#FFA94D\]\/40:hover {
+  border-color: rgba(37, 99, 235, 0.6) !important;
+}
+
 .light .bg-\[\#FFA94D\] {
   background-color: var(--accent-amber) !important;
   color: #FFFFFF !important;
 }
 .light .hover\:bg-\[\#FFA94D\]:hover {
-  background-color: var(--accent-amber) !important;
+  background-color: var(--accent-hover) !important;
   color: #FFFFFF !important;
 }
 .light .hover\:bg-\[\#ffb968\]:hover {
   background-color: var(--accent-hover) !important;
 }
+
 .light .bg-\[\#FFA94D\]\/5 {
   background-color: rgba(37, 99, 235, 0.08) !important;
 }
 .light .bg-\[\#FFA94D\]\/10 {
   background-color: rgba(37, 99, 235, 0.12) !important;
 }
+.light .bg-\[\#FFA94D\]\/15 {
+  background-color: rgba(37, 99, 235, 0.14) !important;
+}
+.light .hover\:bg-\[\#FFA94D\]\/10:hover,
+.light .hover\:bg-\[\#FFA94D\]\/15:hover {
+  background-color: rgba(37, 99, 235, 0.2) !important;
+}
 
-.light [class*="bg-[radial-gradient(circle_at_15%_50%"] {
-  background: radial-gradient(circle at 15% 50%, rgba(37, 99, 235, 0.14) 0%, rgba(244, 247, 251, 0.96) 70%) !important;
+.light .selection\:bg-\[\#FFA94D\]\/30::selection {
+  background-color: rgba(37, 99, 235, 0.25) !important;
+  color: #0F172A !important;
 }
