@@ -52,40 +52,6 @@ export default async function Image() {
             zIndex: 10,
           }}
         >
-          {/* Availability Pill */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "10px",
-              padding: "6px 14px",
-              borderRadius: "9999px",
-              border: "1px solid rgba(52, 211, 153, 0.3)",
-              backgroundColor: "rgba(52, 211, 153, 0.1)",
-              marginBottom: "28px",
-            }}
-          >
-            <div
-              style={{
-                width: "10px",
-                height: "10px",
-                borderRadius: "50%",
-                backgroundColor: "#34D399",
-                boxShadow: "0 0 10px #34D399",
-              }}
-            />
-            <span
-              style={{
-                color: "#34D399",
-                fontSize: "14px",
-                fontWeight: 600,
-                letterSpacing: "1px",
-              }}
-            >
-              {DATA.availability}
-            </span>
-          </div>
-
           {/* Name & Title */}
           <h1
             style={{

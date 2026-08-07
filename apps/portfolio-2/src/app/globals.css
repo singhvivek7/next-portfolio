@@ -7,28 +7,63 @@
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
+
+    /* Theme tokens - Dark by default */
+    --bg-main: #0B0C0E;
+    --bg-card: #16171B;
+    --bg-elevated: #131417;
+    --bg-subtle: #0E0F12;
+    --bg-hover: #1F2128;
+    --text-main: #F2F0EA;
+    --text-muted: #9A9691;
+    --text-dim: #66625D;
+    --border-main: #232428;
+    --border-subtle: #1B1C20;
+    --accent-amber: #FFA94D;
+    --accent-hover: #FFB968;
+    --accent-text: #1A1200;
+    --dot-color: rgba(255, 169, 77, 0.055);
+  }
+
+  .light {
+    color-scheme: light;
+    --bg-main: #F4F7FB;
+    --bg-card: #FFFFFF;
+    --bg-elevated: #EBF1F7;
+    --bg-subtle: #E2E8F0;
+    --bg-hover: #D8E2EC;
+    --text-main: #0F172A;
+    --text-muted: #475569;
+    --text-dim: #64748B;
+    --border-main: #CBD5E1;
+    --border-subtle: #E2E8F0;
+    --accent-amber: #2563EB;
+    --accent-hover: #1D4ED8;
+    --accent-text: #FFFFFF;
+    --dot-color: rgba(56, 189, 248, 0.14);
   }
 
   html {
     scroll-behavior: smooth;
-    background-color: #0B0C0E;
-    color: #F2F0EA;
+    background-color: var(--bg-main);
+    color: var(--text-main);
   }
 
   body {
-    background-color: #0B0C0E;
-    background-image: radial-gradient(circle, rgba(255, 169, 77, 0.055) 1px, transparent 1px);
+    background-color: var(--bg-main);
+    background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1px);
     background-size: 34px 34px;
     font-family: var(--font-body), sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     width: 100%;
     min-height: 100vh;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
   }
 
   ::selection {
-    background-color: #FFA94D;
-    color: #0B0C0E;
+    background-color: var(--accent-amber);
+    color: var(--bg-main);
   }
 }
 
@@ -45,4 +80,99 @@
 
 .animate-log-in {
   animation: logIn 0.4s ease forwards;
+}
+
+/* LIGHT MODE COMPREHENSIVE OVERRIDES */
+.light .bg-\[\#0B0C0E\] {
+  background-color: var(--bg-main) !important;
+}
+.light .bg-\[\#0B0C0E\]\/80 {
+  background-color: rgba(244, 247, 251, 0.85) !important;
+}
+.light .bg-\[\#0B0C0E\]\/95 {
+  background-color: rgba(244, 247, 251, 0.95) !important;
+}
+.light .bg-\[\#16171B\] {
+  background-color: var(--bg-card) !important;
+}
+.light .bg-\[\#16181D\] {
+  background-color: var(--bg-card) !important;
+}
+.light .bg-\[\#131417\] {
+  background-color: var(--bg-elevated) !important;
+}
+.light .bg-\[\#0E0F12\] {
+  background-color: var(--bg-subtle) !important;
+}
+.light .bg-\[\#111215\] {
+  background-color: var(--bg-elevated) !important;
+}
+.light .bg-\[\#1A1C23\] {
+  background-color: var(--bg-card) !important;
+}
+.light .bg-\[\#15161A\] {
+  background-color: var(--bg-subtle) !important;
+}
+
+.light .text-\[\#F2F0EA\] {
+  color: var(--text-main) !important;
+}
+.light .hover\:text-\[\#F2F0EA\]:hover {
+  color: var(--text-main) !important;
+}
+.light .text-\[\#9A9691\] {
+  color: var(--text-muted) !important;
+}
+.light .hover\:text-\[\#9A9691\]:hover {
+  color: var(--text-muted) !important;
+}
+.light .text-\[\#66625D\] {
+  color: var(--text-dim) !important;
+}
+.light .text-\[\#7A7671\] {
+  color: var(--text-muted) !important;
+}
+
+.light .border-\[\#232428\] {
+  border-color: var(--border-main) !important;
+}
+.light .border-\[\#1B1C20\] {
+  border-color: var(--border-subtle) !important;
+}
+.light .border-\[\#1A1C23\] {
+  border-color: var(--border-main) !important;
+}
+.light .divide-\[\#232428\] > * + * {
+  border-color: var(--border-main) !important;
+}
+.light .divide-\[\#1B1C20\] > * + * {
+  border-color: var(--border-subtle) !important;
+}
+
+.light .text-\[\#FFA94D\] {
+  color: var(--accent-amber) !important;
+}
+.light .border-\[\#FFA94D\] {
+  border-color: var(--accent-amber) !important;
+}
+.light .bg-\[\#FFA94D\] {
+  background-color: var(--accent-amber) !important;
+  color: #FFFFFF !important;
+}
+.light .hover\:bg-\[\#FFA94D\]:hover {
+  background-color: var(--accent-amber) !important;
+  color: #FFFFFF !important;
+}
+.light .hover\:bg-\[\#ffb968\]:hover {
+  background-color: var(--accent-hover) !important;
+}
+.light .bg-\[\#FFA94D\]\/5 {
+  background-color: rgba(37, 99, 235, 0.08) !important;
+}
+.light .bg-\[\#FFA94D\]\/10 {
+  background-color: rgba(37, 99, 235, 0.12) !important;
+}
+
+.light [class*="bg-[radial-gradient(circle_at_15%_50%"] {
+  background: radial-gradient(circle at 15% 50%, rgba(37, 99, 235, 0.14) 0%, rgba(244, 247, 251, 0.96) 70%) !important;
 }

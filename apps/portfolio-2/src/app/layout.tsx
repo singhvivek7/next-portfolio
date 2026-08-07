@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { DATA } from "@/data/resume";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -53,9 +54,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
-      <body>{children}</body>
+      <body className="antialiased">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
