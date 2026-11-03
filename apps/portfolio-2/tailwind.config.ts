@@ -1,8 +1,6 @@
 import type { Config } from 'tailwindcss'
-import { fontFamily } from 'tailwindcss/defaultTheme'
 
 const config = {
-  darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -12,23 +10,26 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['var(--font-display)', 'Space Grotesk', 'sans-serif'],
-        body: ['var(--font-body)', 'Inter', 'sans-serif'],
-        mono: ['var(--font-mono)', 'JetBrains Mono', 'monospace'],
-        sans: ['var(--font-body)', ...fontFamily.sans],
+        display: ['var(--display)', 'var(--font-display)', 'Manrope', 'sans-serif'],
+        sans: ['var(--sans)', 'var(--font-sans)', 'DM Sans', 'sans-serif'],
+        mono: ['var(--mono)', 'var(--font-mono)', 'DM Mono', 'monospace'],
       },
       colors: {
-        'bg-dark': '#0B0C0E',
-        'bg-elevated': '#131417',
-        'bg-card': '#16171B',
-        'accent-amber': '#FFA94D',
+        bg: '#f7f7f2',
+        paper: '#ffffff',
+        ink: '#18221e',
+        muted: '#68736c',
+        line: '#e4e8df',
+        green: '#235b45',
+        green2: '#dcebdd',
+        lime: '#d7f36a',
       },
-      animation: {
-        'pulse-subtle': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      boxShadow: {
+        custom: '0 18px 60px rgba(30, 53, 39, 0.08)',
       },
     },
   },
-  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
+  plugins: [],
 } satisfies Config
 
 export default config

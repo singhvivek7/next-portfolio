@@ -1,48 +1,36 @@
-import type { Metadata } from "next";
-import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import { DATA } from "@/data/resume";
-import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["500", "600", "700"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-body",
-  weight: ["400", "500", "600"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  weight: ["400", "500"],
-});
+export const viewport: Viewport = {
+  themeColor: "#090b09",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
-  title: `${DATA.name} | ${DATA.title}`,
-  description: DATA.bio,
+  title: "Vivek Kumar — Software Engineer",
+  description:
+    "Vivek Kumar is a full-stack software engineer building reliable backend systems, microservices, and thoughtful products that scale.",
   openGraph: {
-    title: `${DATA.name} | ${DATA.title}`,
-    description: `${DATA.role} - ${DATA.tagline} ${DATA.bio}`,
+    title: "Vivek Kumar — Software Engineer",
+    description:
+      "Full-Stack Engineer building reliable backend systems, microservices, and developer tools that scale.",
     url: DATA.url,
-    siteName: `${DATA.name} Portfolio`,
+    siteName: "Vivek Kumar",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${DATA.name} | ${DATA.title}`,
-    description: `${DATA.role} - ${DATA.tagline}`,
+    title: "Vivek Kumar — Software Engineer",
+    description:
+      "Full-Stack Engineer building reliable backend systems, microservices, and developer tools that scale.",
   },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
   },
 };
 
@@ -52,15 +40,38 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}
-    >
-      <body className="antialiased">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          {children}
-        </ThemeProvider>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var saved = localStorage.getItem('vivek-theme');
+                  if (saved === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                  } else {
+                    document.documentElement.removeAttribute('data-theme');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body>
+        <div className="grain" aria-hidden="true" />
+        {children}
       </body>
     </html>
   );
