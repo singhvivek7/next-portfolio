@@ -13,7 +13,7 @@ export function HeroSection() {
         </div>
 
         <div className="mono hero-note reveal">
-          CURRENTLY BUILDING · BACKEND SYSTEMS &amp; DEVELOPER TOOLS
+          v26
         </div>
 
         <h1>

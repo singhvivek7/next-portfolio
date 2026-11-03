@@ -1,6 +1,10 @@
 {
   "name": "next-portfolio-monorepo",
+  "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=26.13.0"
+  },
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",

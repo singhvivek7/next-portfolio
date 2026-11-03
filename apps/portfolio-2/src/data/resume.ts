@@ -23,7 +23,7 @@ export const DATA = {
     secondaryHref: 'https://github.com/singhvivek7',
   },
 
-  heroNote: 'CURRENTLY BUILDING · BACKEND SYSTEMS & DEVELOPER TOOLS',
+  heroNote: 'v26',
 
   floatingBadges: [
     {
