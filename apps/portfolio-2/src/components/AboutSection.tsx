@@ -1,5 +1,7 @@
 'use client';
 
+import { ArrowUpRight } from 'lucide-react';
+
 export function AboutSection() {
   return (
     <section className="about wrap" id="about">
@@ -46,7 +48,7 @@ export function AboutSection() {
               target="_blank"
               rel="noreferrer"
             >
-              More about my work <em>↗</em>
+              More about my work <ArrowUpRight size={18} aria-hidden="true" />
             </a>
             <div className="big">
               Let&apos;s<br />talk<span>.</span>

@@ -300,10 +300,13 @@ h1 span {
   gap: 30px;
 }
 
-.link em {
+.link em,
+.link svg {
   font-style: normal;
   color: var(--lime);
-  font-size: 20px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 /* Floating Code Window in Hero */

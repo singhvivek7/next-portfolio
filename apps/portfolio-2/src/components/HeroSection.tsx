@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowUpRight } from 'lucide-react';
 import { ThreeCanvas } from './ThreeCanvas';
 
 export function HeroSection() {
@@ -29,7 +30,7 @@ export function HeroSection() {
 
           <div className="hero-links">
             <a className="link" href="#projects">
-              Explore my work <em>↗</em>
+              Explore my work <ArrowUpRight size={18} aria-hidden="true" />
             </a>
             <a
               className="link"
@@ -37,7 +38,7 @@ export function HeroSection() {
               target="_blank"
               rel="noreferrer"
             >
-              GitHub <em>↗</em>
+              GitHub <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </div>
         </div>
