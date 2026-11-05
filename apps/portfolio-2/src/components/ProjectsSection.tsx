@@ -1,5 +1,7 @@
 'use client';
 
+import { ArrowUpRight } from 'lucide-react';
+
 export function ProjectsSection() {
   return (
     <section className="work wrap" id="projects">
@@ -65,7 +67,7 @@ export function ProjectsSection() {
               rel="noreferrer"
               aria-label="Visit NextLink live site"
             >
-              ↗
+              <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </div>
         </article>
@@ -108,7 +110,7 @@ export function ProjectsSection() {
               rel="noreferrer"
               aria-label="Visit SettleUp live site"
             >
-              ↗
+              <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </div>
         </article>
@@ -171,7 +173,7 @@ export function ProjectsSection() {
               rel="noreferrer"
               aria-label="Visit RenderPDF live site"
             >
-              ↗
+              <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </div>
         </article>
@@ -209,7 +211,7 @@ export function ProjectsSection() {
               rel="noreferrer"
               aria-label="View Recommendations on GitHub"
             >
-              ↗
+              <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </div>
         </article>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function NotFound() {
   return (
@@ -40,9 +41,12 @@ export default function NotFound() {
           fontWeight: 600,
           fontSize: '14px',
           textDecoration: 'none',
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '6px',
         }}
       >
-        Return Home ↗
+        Return Home <ArrowUpRight size={16} aria-hidden="true" />
       </Link>
     </main>
   );

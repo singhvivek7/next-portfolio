@@ -19,7 +19,7 @@ export const DATA = {
   heroCta: {
     primaryText: 'Explore my work',
     primaryHref: '#projects',
-    secondaryText: 'GitHub ↗',
+    secondaryText: 'GitHub',
     secondaryHref: 'https://github.com/singhvivek7',
   },
 
@@ -291,7 +291,7 @@ export const DATA = {
     titleEnd: 'meaningful.',
     description:
       'Open to interesting engineering conversations and opportunities.',
-    ctaText: 'Get in touch ↗',
+    ctaText: 'Get in touch',
   },
 
   skills: {
@@ -355,7 +355,7 @@ export const DATA = {
       { name: 'X / Twitter', url: 'https://x.com/V1V3K__' },
       { name: 'LeetCode', url: 'https://leetcode.com/singhvivek7' },
       { name: 'Email', url: 'mailto:singhvivek1999@yahoo.com' },
-      { name: 'Live site ↗', url: 'https://www.vivekkk.in' },
+      { name: 'Live site', url: 'https://www.vivekkk.in' },
     ],
   },
 };

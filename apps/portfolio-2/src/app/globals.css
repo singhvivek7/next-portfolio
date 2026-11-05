@@ -1140,11 +1140,18 @@ section {
 }
 
 .contact-copy a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: var(--fg);
   border-bottom: 1px solid var(--lime);
   padding-bottom: 8px;
   margin-top: 18px;
+}
+
+.contact-copy a svg {
+  color: var(--lime);
+  flex-shrink: 0;
 }
 
 /* Footer */
@@ -1165,6 +1172,12 @@ footer {
 .social {
   display: flex;
   gap: 26px;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .social a:hover {

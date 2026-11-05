@@ -1,5 +1,7 @@
 'use client';
 
+import { ArrowUpRight } from 'lucide-react';
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -15,31 +17,31 @@ export function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          GitHub ↗
+          GitHub <ArrowUpRight size={11} aria-hidden="true" />
         </a>
         <a
           href="https://linkedin.com/in/singhvivek7"
           target="_blank"
           rel="noreferrer"
         >
-          LinkedIn ↗
+          LinkedIn <ArrowUpRight size={11} aria-hidden="true" />
         </a>
         <a href="https://x.com/V1V3K__" target="_blank" rel="noreferrer">
-          X ↗
+          X <ArrowUpRight size={11} aria-hidden="true" />
         </a>
         <a
           href="https://leetcode.com/singhvivek7"
           target="_blank"
           rel="noreferrer"
         >
-          LeetCode ↗
+          LeetCode <ArrowUpRight size={11} aria-hidden="true" />
         </a>
         <a
           href="https://www.vivekkk.in"
           target="_blank"
           rel="noreferrer"
         >
-          Live site ↗
+          Live site <ArrowUpRight size={11} aria-hidden="true" />
         </a>
       </nav>
 

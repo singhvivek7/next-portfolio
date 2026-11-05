@@ -1,5 +1,7 @@
 'use client';
 
+import { ArrowUpRight } from 'lucide-react';
+
 export function ContactSection() {
   return (
     <section className="contact wrap" id="contact">
@@ -19,7 +21,9 @@ export function ContactSection() {
         <div className="contact-copy">
           Open to interesting engineering conversations and opportunities.
           <br />
-          <a href="mailto:singhvivek1999@yahoo.com">singhvivek1999@yahoo.com ↗</a>
+          <a href="mailto:singhvivek1999@yahoo.com">
+            singhvivek1999@yahoo.com <ArrowUpRight size={14} aria-hidden="true" />
+          </a>
         </div>
       </div>
     </section>
