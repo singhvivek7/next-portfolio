@@ -22,7 +22,7 @@ export function ExperienceSection() {
 
             <p>
               <strong>Software Development Engineer II</strong> · Recommendations
-              Platform · APR 2025 — PRESENT
+              Platform · APR 2026 — PRESENT
             </p>
             <ul>
               <li>
@@ -42,7 +42,7 @@ export function ExperienceSection() {
 
             <p>
               <strong>Software Development Engineer I</strong> · Full-stack
-              Development · JUN 2024 — APR 2025
+              Development · JUN 2025 — APR 2026
             </p>
             <ul>
               <li>
@@ -70,7 +70,7 @@ export function ExperienceSection() {
               <span>REST APIs</span>
             </div>
           </div>
-          <div className="date">JUN 2024 — PRESENT</div>
+          <div className="date">JUN 2025 — PRESENT</div>
         </div>
 
         {/* PayBolt */}
